@@ -64,13 +64,11 @@ if Double(y) > Double(x) && Double(a) / Double(b) > 9 {
 */
 
 
-func isGreater(a: Int, b: Int) {
+func isGreater(a: Int, b: Int) -> String {
     if(a > b) {
-        "yep"
-        return
+        return "yep"
     }
-    "nope"
-    return
+        return "nope"
 }
 
 isGreater(a: a, b: b)
@@ -87,22 +85,22 @@ isGreater(a: a, b: b)
  isForce(with:"Mary") // false
  ```
 */
-    func isForce(with: String) {
+    func isForce(with: String) -> Bool {
         switch with {
             case "Luke":
-                 true
+                 return true
             case "Leia":
-                 true
+                return true
             case "Anakin":
-                 true
+                return true
             case "Obi Wan":
-                 true
+                return true
             case "Yoda":
-                 true
+                return true
             case "Vader":
-                 true
+                return true
             default:
-                 false
+                return false
         }
     }
 
